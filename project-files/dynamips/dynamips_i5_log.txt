@@ -1,0 +1,30 @@
+Apr 26 10:43:17.112 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 10:43:17.112 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32949.
+Apr 26 10:43:17.129 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 10:43:17.129 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 10:43:17.129 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 10:43:17.130 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Apr 26 10:43:17.130 VM: VM R5 created.
+Apr 26 10:43:17.131 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2005 
+Apr 26 10:43:17.131 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Apr 26 10:43:17.132 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 26 10:43:17.132 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Apr 26 10:43:17.133 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Apr 26 10:43:17.134 HYPERVISOR: exec_cmd: vm set_ios R5 /home/guy/GNS3/images/IOS/c7200p-adventerprisek9-mz.124-11.T2.image 
+Apr 26 10:43:17.135 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 26 10:43:17.135 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x2d993a8 
+Apr 26 10:43:17.136 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Apr 26 10:43:17.137 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Apr 26 10:43:17.137 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 26 10:43:17.138 HYPERVISOR: exec_cmd: c7200 set_npe R5 npe-g2 
+Apr 26 10:43:17.139 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Apr 26 10:45:27.919 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 26 10:45:27.919 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x0 
+Apr 26 10:45:27.920 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 26 10:45:48.556 HYPERVISOR: exec_cmd: vm get_status R5 
+Apr 26 10:45:48.560 HYPERVISOR: exec_cmd: vm extract_config R5 
+Apr 26 10:45:48.564 HYPERVISOR: exec_cmd: vm delete R5 
+Apr 26 10:45:48.564 VM: VM R5 destroyed.
+Apr 26 10:45:48.566 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 10:45:48.768 HYPERVISOR: Stopped.
+Apr 26 10:45:48.769 GENERAL: reset done.

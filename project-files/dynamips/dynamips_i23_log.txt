@@ -1,0 +1,62 @@
+Apr 26 11:17:29.997 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 11:17:29.997 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54948.
+Apr 26 11:17:30.013 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 11:17:30.013 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 11:17:30.013 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 11:17:30.014 HYPERVISOR: exec_cmd: vm create R1 15 c3600 
+Apr 26 11:17:30.014 VM: VM R1 created.
+Apr 26 11:17:30.014 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2007 
+Apr 26 11:17:30.015 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Apr 26 11:17:30.015 HYPERVISOR: exec_cmd: c3600 set_chassis R1 3660 
+Apr 26 11:17:30.016 HYPERVISOR: exec_cmd: vm set_ios R1 /home/guy/GNS3/images/IOS/c3660-ik9o3s-mz.124-13b.image 
+Apr 26 11:17:30.017 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 26 11:17:30.018 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60637a34 
+Apr 26 11:17:30.018 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 26 11:17:30.019 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Apr 26 11:17:30.020 HYPERVISOR: exec_cmd: vm set_config R1 configs/i15_startup-config.cfg 
+Apr 26 11:17:59.082 HYPERVISOR: exec_cmd: vm rename R1 RS_R1 
+Apr 26 11:18:09.542 HYPERVISOR: exec_cmd: nio create_udp udp-fcfc4ce9-81c7-4a23-b285-97c14179f047 10030 127.0.0.1 10031 
+Apr 26 11:18:09.551 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RS_R1 0 1 udp-fcfc4ce9-81c7-4a23-b285-97c14179f047 
+Apr 26 11:18:09.552 HYPERVISOR: exec_cmd: vm get_status RS_R1 
+Apr 26 11:20:45.842 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:23:02.448 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:30:05.631 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:30:35.382 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Apr 26 11:30:35.382 VM: VM Ghost created.
+Apr 26 11:30:35.402 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/guy/GNS3/images/IOS/c3660-ik9o3s-mz.124-13b.image 
+Apr 26 11:30:35.404 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 26 11:30:35.404 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3660-ik9o3s-mz.124-13b.image-192.ghost 
+Apr 26 11:30:35.405 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Apr 26 11:30:35.406 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 11:30:35.406 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 26 11:30:36.052 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 11:30:36.053 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 26 11:30:36.257 VM: VM Ghost shutdown.
+Apr 26 11:30:36.258 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 26 11:30:36.258 VM: VM Ghost destroyed.
+Apr 26 11:30:36.261 HYPERVISOR: exec_cmd: vm set_ghost_status RS_R1 2 
+Apr 26 11:30:36.261 HYPERVISOR: exec_cmd: vm set_ghost_file RS_R1 c3660-ik9o3s-mz.124-13b.image-192.ghost 
+Apr 26 11:30:36.262 HYPERVISOR: exec_cmd: vm get_status RS_R1 
+Apr 26 11:30:36.264 HYPERVISOR: exec_cmd: vm start RS_R1 
+Apr 26 11:31:06.573 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:35:33.264 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:39:43.058 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:42:06.104 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 11:59:42.197 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 12:27:00.732 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 12:43:44.403 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 12:48:12.992 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 13:04:17.894 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 13:27:18.552 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 13:59:38.837 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 13:59:42.241 HYPERVISOR: exec_cmd: vm get_status RS_R1 
+Apr 26 13:59:42.242 HYPERVISOR: exec_cmd: vm stop RS_R1 
+Apr 26 13:59:42.305 VM: VM RS_R1 shutdown.
+Apr 26 13:59:42.307 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 13:59:56.045 HYPERVISOR: exec_cmd: vm get_status RS_R1 
+Apr 26 13:59:56.051 HYPERVISOR: exec_cmd: vm extract_config RS_R1 
+Apr 26 13:59:56.058 HYPERVISOR: exec_cmd: vm delete RS_R1 
+Apr 26 13:59:56.059 VM: VM RS_R1 destroyed.
+Apr 26 13:59:56.065 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 13:59:56.334 HYPERVISOR: Stopped.
+Apr 26 13:59:56.334 GENERAL: reset done.

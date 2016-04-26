@@ -1,0 +1,27 @@
+Apr 26 10:43:30.884 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 10:43:30.884 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50767.
+Apr 26 10:43:30.900 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 10:43:30.901 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 10:43:30.901 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 10:43:30.902 HYPERVISOR: exec_cmd: vm create R7 7 c7200 
+Apr 26 10:43:30.902 VM: VM R7 created.
+Apr 26 10:43:30.902 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 2007 
+Apr 26 10:43:30.903 HYPERVISOR: exec_cmd: c7200 get_mac_addr R7 
+Apr 26 10:43:30.904 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:43:30.904 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 0 C7200-IO-FE 
+Apr 26 10:43:30.905 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Apr 26 10:43:30.906 HYPERVISOR: exec_cmd: vm set_ios R7 /home/guy/GNS3/images/IOS/c7200p-adventerprisek9-mz.124-11.T2.image 
+Apr 26 10:43:30.907 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:43:30.907 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x2d993a8 
+Apr 26 10:43:30.908 HYPERVISOR: exec_cmd: vm set_nvram R7 512 
+Apr 26 10:43:30.909 HYPERVISOR: exec_cmd: vm set_ram R7 512 
+Apr 26 10:43:30.909 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:43:30.910 HYPERVISOR: exec_cmd: c7200 set_npe R7 npe-g2 
+Apr 26 10:43:30.911 HYPERVISOR: exec_cmd: vm set_config R7 configs/i7_startup-config.cfg 
+Apr 26 10:45:48.563 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:45:48.565 HYPERVISOR: exec_cmd: vm extract_config R7 
+Apr 26 10:45:48.567 HYPERVISOR: exec_cmd: vm delete R7 
+Apr 26 10:45:48.567 VM: VM R7 destroyed.
+Apr 26 10:45:48.569 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 10:45:49.023 HYPERVISOR: Stopped.
+Apr 26 10:45:49.024 GENERAL: reset done.

@@ -1,0 +1,46 @@
+Apr 26 10:40:48.363 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 10:40:48.363 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53374.
+Apr 26 10:40:48.381 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 10:40:48.381 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 10:40:48.381 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 10:40:48.382 HYPERVISOR: exec_cmd: vm create R4 4 c3745 
+Apr 26 10:40:48.382 VM: VM R4 created.
+Apr 26 10:40:48.382 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2004 
+Apr 26 10:40:48.383 HYPERVISOR: exec_cmd: c3745 get_mac_addr R4 
+Apr 26 10:40:48.384 HYPERVISOR: exec_cmd: vm set_ios R4 /home/guy/GNS3/images/IOS/c3745-advsecurityk9-mz.123-14.t7.image 
+Apr 26 10:40:48.384 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Apr 26 10:40:48.385 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 26 10:40:48.386 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x6074d038 
+Apr 26 10:40:48.386 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Apr 26 10:40:48.387 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Apr 26 10:40:48.388 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 26 10:40:48.388 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-16ESW 
+Apr 26 10:40:48.389 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Apr 26 11:01:57.303 HYPERVISOR: exec_cmd: vm rename R4 EC_CORE_SW2 
+Apr 26 11:14:06.548 HYPERVISOR: exec_cmd: nio create_udp udp-c97df573-eb65-42e6-8251-c7a5fe877cbf 10019 127.0.0.1 10018 
+Apr 26 11:14:06.550 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_CORE_SW2 1 15 udp-c97df573-eb65-42e6-8251-c7a5fe877cbf 
+Apr 26 11:14:06.551 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW2 
+Apr 26 11:14:26.235 HYPERVISOR: exec_cmd: nio create_udp udp-c5134341-1398-4c65-8f17-f494d99dd1bf 10020 127.0.0.1 10021 
+Apr 26 11:14:26.242 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_CORE_SW2 1 1 udp-c5134341-1398-4c65-8f17-f494d99dd1bf 
+Apr 26 11:14:26.243 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW2 
+Apr 26 11:15:37.369 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW2 
+Apr 26 11:15:37.370 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding EC_CORE_SW2 1 15 
+Apr 26 11:15:37.382 HYPERVISOR: exec_cmd: nio delete udp-c97df573-eb65-42e6-8251-c7a5fe877cbf 
+Apr 26 11:15:59.611 HYPERVISOR: exec_cmd: nio create_udp udp-fb8a1bd6-9491-4c25-8218-cf786e767def 10016 127.0.0.1 10017 
+Apr 26 11:15:59.619 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_CORE_SW2 1 15 udp-fb8a1bd6-9491-4c25-8218-cf786e767def 
+Apr 26 11:15:59.621 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW2 
+Apr 26 11:20:45.844 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:23:02.451 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:30:05.634 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:30:37.395 HYPERVISOR: exec_cmd: vm set_ghost_status EC_CORE_SW2 2 
+Apr 26 11:30:37.396 HYPERVISOR: exec_cmd: vm set_ghost_file EC_CORE_SW2 c3745-advsecurityk9-mz.123-14.t7.image-256.ghost 
+Apr 26 11:30:37.397 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW2 
+Apr 26 11:30:37.398 HYPERVISOR: exec_cmd: vm start EC_CORE_SW2 
+Apr 26 11:31:06.830 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:35:33.348 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:39:43.164 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:42:06.223 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 11:59:42.301 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
+Apr 26 12:24:40.107 HYPERVISOR: exec_cmd: vm set_disk0 EC_CORE_SW2 256 
+Apr 26 12:24:40.108 HYPERVISOR: exec_cmd: vm set_disk1 EC_CORE_SW2 256 
+Apr 26 12:27:00.839 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW2 
