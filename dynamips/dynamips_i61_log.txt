@@ -1,0 +1,31 @@
+Apr 27 16:39:27.731 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 27 16:39:27.731 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46152.
+Apr 27 16:39:27.748 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 27 16:39:27.748 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 27 16:39:27.748 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 27 16:39:27.749 HYPERVISOR: exec_cmd: vm create R1 7 c3745 
+Apr 27 16:39:27.749 VM: VM R1 created.
+Apr 27 16:39:27.750 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2003 
+Apr 27 16:39:27.750 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Apr 27 16:39:27.751 HYPERVISOR: exec_cmd: vm set_ios R1 /home/guy/GNS3/images/IOS/c3745-advsecurityk9-mz.123-14.t7.image 
+Apr 27 16:39:27.752 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Apr 27 16:39:27.752 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 27 16:39:27.753 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6074d038 
+Apr 27 16:39:27.754 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 27 16:39:27.754 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Apr 27 16:39:27.755 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 27 16:39:27.756 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Apr 27 16:39:27.769 HYPERVISOR: exec_cmd: vm set_config R1 configs/i7_startup-config.cfg 
+Apr 27 16:39:36.152 HYPERVISOR: exec_cmd: vm rename R1 EC_BU_R2 
+Apr 27 16:39:44.363 HYPERVISOR: exec_cmd: nio create_udp udp-a66969d1-165f-4ff6-af60-2d94011652f0 10011 127.0.0.1 10010 
+Apr 27 16:39:44.364 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R2 0 1 udp-a66969d1-165f-4ff6-af60-2d94011652f0 
+Apr 27 16:39:44.364 HYPERVISOR: exec_cmd: vm get_status EC_BU_R2 
+Apr 27 16:39:46.924 HYPERVISOR: exec_cmd: nio create_udp udp-1e169c33-390c-4c1f-a1a6-771f5c27763b 10030 127.0.0.1 10031 
+Apr 27 16:39:46.933 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R2 0 0 udp-1e169c33-390c-4c1f-a1a6-771f5c27763b 
+Apr 27 16:39:46.934 HYPERVISOR: exec_cmd: vm get_status EC_BU_R2 
+Apr 27 16:39:56.544 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R2 
+Apr 27 16:40:03.040 HYPERVISOR: exec_cmd: vm set_ghost_status EC_BU_R2 2 
+Apr 27 16:40:03.041 HYPERVISOR: exec_cmd: vm set_ghost_file EC_BU_R2 c3745-advsecurityk9-mz.123-14.t7.image-256.ghost 
+Apr 27 16:40:03.042 HYPERVISOR: exec_cmd: vm get_status EC_BU_R2 
+Apr 27 16:40:03.043 HYPERVISOR: exec_cmd: vm start EC_BU_R2 
+Apr 27 16:46:08.460 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R2 

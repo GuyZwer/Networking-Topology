@@ -1,0 +1,23 @@
+Apr 26 19:28:38.877 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 19:28:38.877 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39351.
+Apr 26 19:28:38.910 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 19:28:38.912 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 19:28:38.912 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 19:28:38.913 HYPERVISOR: exec_cmd: ethsw create EC_SD_SW2 
+Apr 26 19:28:39.789 HYPERVISOR: exec_cmd: nio create_udp udp-9aaf1410-e8d3-4816-899a-f7fa035c3bfa 10006 127.0.0.1 10005 
+Apr 26 19:28:39.790 HYPERVISOR: exec_cmd: ethsw add_nio EC_SD_SW2 udp-9aaf1410-e8d3-4816-899a-f7fa035c3bfa 
+Apr 26 19:28:39.802 HYPERVISOR: exec_cmd: ethsw set_access_port EC_SD_SW2 udp-9aaf1410-e8d3-4816-899a-f7fa035c3bfa 1 
+Apr 26 19:28:39.862 HYPERVISOR: exec_cmd: nio create_udp udp-bbdccabb-deb7-4103-9dac-d05de1cba5dc 10009 127.0.0.1 10008 
+Apr 26 19:28:39.863 HYPERVISOR: exec_cmd: ethsw add_nio EC_SD_SW2 udp-bbdccabb-deb7-4103-9dac-d05de1cba5dc 
+Apr 26 19:28:39.880 HYPERVISOR: exec_cmd: ethsw set_access_port EC_SD_SW2 udp-bbdccabb-deb7-4103-9dac-d05de1cba5dc 1 
+Apr 27 09:24:36.179 HYPERVISOR: exec_cmd: ethsw remove_nio EC_SD_SW2 udp-9aaf1410-e8d3-4816-899a-f7fa035c3bfa 
+Apr 27 09:24:36.191 HYPERVISOR: exec_cmd: nio delete udp-9aaf1410-e8d3-4816-899a-f7fa035c3bfa 
+Apr 27 09:26:12.837 HYPERVISOR: exec_cmd: nio create_udp udp-0ae913af-153c-47e7-bb51-d183932458e4 10022 127.0.0.1 10023 
+Apr 27 09:26:12.839 HYPERVISOR: exec_cmd: ethsw add_nio EC_SD_SW2 udp-0ae913af-153c-47e7-bb51-d183932458e4 
+Apr 27 09:26:12.849 HYPERVISOR: exec_cmd: ethsw set_access_port EC_SD_SW2 udp-0ae913af-153c-47e7-bb51-d183932458e4 1 
+Apr 27 09:59:41.596 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EC_SD_SW2 udp-0ae913af-153c-47e7-bb51-d183932458e4 1 
+Apr 27 09:59:41.597 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EC_SD_SW2 udp-bbdccabb-deb7-4103-9dac-d05de1cba5dc 1 
+Apr 27 16:47:06.220 HYPERVISOR: exec_cmd: ethsw delete EC_SD_SW2 
+Apr 27 16:47:06.257 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 27 16:47:06.608 HYPERVISOR: Stopped.
+Apr 27 16:47:06.608 GENERAL: reset done.

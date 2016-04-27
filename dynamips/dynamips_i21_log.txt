@@ -1,0 +1,10 @@
+Apr 26 11:10:41.925 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 11:10:41.925 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58737.
+Apr 26 11:10:41.943 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 11:10:41.944 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 11:10:41.944 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 11:10:41.944 HYPERVISOR: exec_cmd: frsw create FR1 
+Apr 26 11:11:10.007 HYPERVISOR: exec_cmd: frsw delete FR1 
+Apr 26 11:11:10.009 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 11:11:10.466 HYPERVISOR: Stopped.
+Apr 26 11:11:10.466 GENERAL: reset done.

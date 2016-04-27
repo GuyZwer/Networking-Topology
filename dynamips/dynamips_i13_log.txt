@@ -1,0 +1,69 @@
+Apr 26 10:48:22.512 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 10:48:22.512 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38807.
+Apr 26 10:48:22.528 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 10:48:22.528 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 10:48:22.528 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 10:48:22.529 HYPERVISOR: exec_cmd: vm create R8 13 c3725 
+Apr 26 10:48:22.529 VM: VM R8 created.
+Apr 26 10:48:22.530 HYPERVISOR: exec_cmd: vm set_con_tcp_port R8 2008 
+Apr 26 10:48:22.530 HYPERVISOR: exec_cmd: c3725 get_mac_addr R8 
+Apr 26 10:48:22.531 HYPERVISOR: exec_cmd: vm set_ios R8 /home/guy/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T7.image 
+Apr 26 10:48:22.532 HYPERVISOR: exec_cmd: vm set_disk0 R8 0 
+Apr 26 10:48:22.533 HYPERVISOR: exec_cmd: vm get_status R8 
+Apr 26 10:48:22.533 HYPERVISOR: exec_cmd: vm set_idle_pc R8 0x60264f28 
+Apr 26 10:48:22.534 HYPERVISOR: exec_cmd: vm set_nvram R8 256 
+Apr 26 10:48:22.535 HYPERVISOR: exec_cmd: vm set_config R8 configs/i13_startup-config.cfg 
+Apr 26 11:08:58.610 HYPERVISOR: exec_cmd: vm rename R8 EC_BU_R1 
+Apr 26 11:12:38.848 HYPERVISOR: exec_cmd: nio create_udp udp-c2de38e0-f35f-4d25-992c-2e3a3c8253b0 10010 127.0.0.1 10011 
+Apr 26 11:12:38.857 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R1 0 1 udp-c2de38e0-f35f-4d25-992c-2e3a3c8253b0 
+Apr 26 11:12:38.859 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 11:20:45.844 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:21:59.068 HYPERVISOR: exec_cmd: nio create_udp udp-f8d7e54b-5a2e-4f38-a3b7-bacaa0f8c46e 10033 127.0.0.1 10032 
+Apr 26 11:21:59.077 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R1 0 0 udp-f8d7e54b-5a2e-4f38-a3b7-bacaa0f8c46e 
+Apr 26 11:21:59.078 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 11:22:19.008 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 11:22:19.010 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding EC_BU_R1 0 0 
+Apr 26 11:22:19.010 HYPERVISOR: exec_cmd: nio delete udp-f8d7e54b-5a2e-4f38-a3b7-bacaa0f8c46e 
+Apr 26 11:22:33.597 HYPERVISOR: exec_cmd: nio create_udp udp-0c9c2875-3a31-4142-b0da-cfe8b4d6fa0c 10033 127.0.0.1 10032 
+Apr 26 11:22:33.599 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R1 0 0 udp-0c9c2875-3a31-4142-b0da-cfe8b4d6fa0c 
+Apr 26 11:22:33.600 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 11:23:02.450 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:30:05.634 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:30:36.263 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Apr 26 11:30:36.263 VM: VM Ghost created.
+Apr 26 11:30:36.265 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/guy/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T7.image 
+Apr 26 11:30:36.265 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 26 11:30:36.266 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-adventerprisek9-mz.124-15.T7.image-128.ghost 
+Apr 26 11:30:36.267 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 11:30:36.267 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 26 11:30:36.567 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 11:30:36.568 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 26 11:30:36.723 VM: VM Ghost shutdown.
+Apr 26 11:30:36.724 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 26 11:30:36.724 VM: VM Ghost destroyed.
+Apr 26 11:30:36.727 HYPERVISOR: exec_cmd: vm set_ghost_status EC_BU_R1 2 
+Apr 26 11:30:36.727 HYPERVISOR: exec_cmd: vm set_ghost_file EC_BU_R1 c3725-adventerprisek9-mz.124-15.T7.image-128.ghost 
+Apr 26 11:30:36.728 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 11:30:36.729 HYPERVISOR: exec_cmd: vm start EC_BU_R1 
+Apr 26 11:31:06.797 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:35:33.335 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:39:43.151 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:42:06.202 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 11:59:42.280 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 12:27:00.812 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 12:43:44.513 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 12:48:13.106 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 13:04:18.015 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 13:27:18.682 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 13:59:38.963 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 13:59:42.310 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 13:59:42.310 HYPERVISOR: exec_cmd: vm stop EC_BU_R1 
+Apr 26 13:59:42.400 VM: VM EC_BU_R1 shutdown.
+Apr 26 13:59:42.400 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 13:59:56.044 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+Apr 26 13:59:56.050 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+Apr 26 13:59:56.056 HYPERVISOR: exec_cmd: vm delete EC_BU_R1 
+Apr 26 13:59:56.057 VM: VM EC_BU_R1 destroyed.
+Apr 26 13:59:56.064 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 13:59:56.451 HYPERVISOR: Stopped.
+Apr 26 13:59:56.451 GENERAL: reset done.

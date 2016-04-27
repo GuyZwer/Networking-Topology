@@ -1,0 +1,26 @@
+Apr 26 10:47:33.529 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 10:47:33.529 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35270.
+Apr 26 10:47:33.545 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 10:47:33.545 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 10:47:33.545 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 10:47:33.546 HYPERVISOR: exec_cmd: vm create R7 12 c3725 
+Apr 26 10:47:33.546 VM: VM R7 created.
+Apr 26 10:47:33.546 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 2007 
+Apr 26 10:47:33.547 HYPERVISOR: exec_cmd: c3725 get_mac_addr R7 
+Apr 26 10:47:33.548 HYPERVISOR: exec_cmd: vm set_ios R7 /home/guy/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T7.image 
+Apr 26 10:47:33.548 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Apr 26 10:47:33.549 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:47:33.550 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60264f28 
+Apr 26 10:47:33.550 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Apr 26 10:47:33.552 HYPERVISOR: exec_cmd: vm set_config R7 configs/i12_startup-config.cfg 
+Apr 26 10:48:15.788 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:48:15.789 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 NM-16ESW 
+Apr 26 10:48:15.790 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:48:15.790 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 NM-1FE-TX 
+Apr 26 10:49:44.820 HYPERVISOR: exec_cmd: vm get_status R7 
+Apr 26 10:49:44.821 HYPERVISOR: exec_cmd: vm extract_config R7 
+Apr 26 10:49:44.822 HYPERVISOR: exec_cmd: vm delete R7 
+Apr 26 10:49:44.822 VM: VM R7 destroyed.
+Apr 26 10:49:44.822 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 10:49:45.163 HYPERVISOR: Stopped.
+Apr 26 10:49:45.163 GENERAL: reset done.

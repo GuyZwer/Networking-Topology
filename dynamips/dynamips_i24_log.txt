@@ -1,0 +1,31 @@
+Apr 26 11:56:04.275 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 11:56:04.275 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43373.
+Apr 26 11:56:04.291 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 11:56:04.291 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 11:56:04.291 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 11:56:04.292 HYPERVISOR: exec_cmd: vm create R1 5 c3600 
+Apr 26 11:56:04.292 VM: VM R1 created.
+Apr 26 11:56:04.292 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2011 
+Apr 26 11:56:04.293 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Apr 26 11:56:04.293 HYPERVISOR: exec_cmd: c3600 set_chassis R1 3660 
+Apr 26 11:56:04.294 HYPERVISOR: exec_cmd: vm set_ios R1 /home/guy/GNS3/images/IOS/c3660-ik9o3s-mz.124-13b.image 
+Apr 26 11:56:04.295 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 26 11:56:04.295 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60637a34 
+Apr 26 11:56:04.296 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 26 11:56:04.296 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Apr 26 11:56:04.297 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg 
+Apr 26 11:56:07.310 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Apr 26 11:56:07.311 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c3660-ik9o3s-mz.124-13b.image-192.ghost 
+Apr 26 11:56:07.311 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 26 11:56:07.312 HYPERVISOR: exec_cmd: vm start R1 
+Apr 26 11:59:32.373 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 26 11:59:32.373 HYPERVISOR: exec_cmd: vm stop R1 
+Apr 26 11:59:32.437 VM: VM R1 shutdown.
+Apr 26 11:59:32.439 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 26 11:59:37.888 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 26 11:59:37.889 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 26 11:59:37.890 HYPERVISOR: exec_cmd: vm delete R1 
+Apr 26 11:59:37.890 VM: VM R1 destroyed.
+Apr 26 11:59:37.891 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 11:59:37.948 HYPERVISOR: Stopped.
+Apr 26 11:59:37.948 GENERAL: reset done.

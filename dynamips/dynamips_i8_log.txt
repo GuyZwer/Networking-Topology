@@ -1,0 +1,27 @@
+Apr 26 10:43:36.213 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 10:43:36.213 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54295.
+Apr 26 10:43:36.228 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 10:43:36.229 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 10:43:36.229 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 10:43:36.230 HYPERVISOR: exec_cmd: vm create R8 8 c7200 
+Apr 26 10:43:36.230 VM: VM R8 created.
+Apr 26 10:43:36.230 HYPERVISOR: exec_cmd: vm set_con_tcp_port R8 2008 
+Apr 26 10:43:36.231 HYPERVISOR: exec_cmd: c7200 get_mac_addr R8 
+Apr 26 10:43:36.231 HYPERVISOR: exec_cmd: vm get_status R8 
+Apr 26 10:43:36.232 HYPERVISOR: exec_cmd: vm slot_add_binding R8 0 0 C7200-IO-FE 
+Apr 26 10:43:36.232 HYPERVISOR: exec_cmd: vm set_disk0 R8 0 
+Apr 26 10:43:36.233 HYPERVISOR: exec_cmd: vm set_ios R8 /home/guy/GNS3/images/IOS/c7200p-adventerprisek9-mz.124-11.T2.image 
+Apr 26 10:43:36.234 HYPERVISOR: exec_cmd: vm get_status R8 
+Apr 26 10:43:36.234 HYPERVISOR: exec_cmd: vm set_idle_pc R8 0x2d993a8 
+Apr 26 10:43:36.235 HYPERVISOR: exec_cmd: vm set_nvram R8 512 
+Apr 26 10:43:36.236 HYPERVISOR: exec_cmd: vm set_ram R8 512 
+Apr 26 10:43:36.236 HYPERVISOR: exec_cmd: vm get_status R8 
+Apr 26 10:43:36.237 HYPERVISOR: exec_cmd: c7200 set_npe R8 npe-g2 
+Apr 26 10:43:36.238 HYPERVISOR: exec_cmd: vm set_config R8 configs/i8_startup-config.cfg 
+Apr 26 10:46:51.137 HYPERVISOR: exec_cmd: vm get_status R8 
+Apr 26 10:46:51.139 HYPERVISOR: exec_cmd: vm extract_config R8 
+Apr 26 10:46:51.140 HYPERVISOR: exec_cmd: vm delete R8 
+Apr 26 10:46:51.140 VM: VM R8 destroyed.
+Apr 26 10:46:51.141 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 26 10:46:51.406 HYPERVISOR: Stopped.
+Apr 26 10:46:51.406 GENERAL: reset done.
