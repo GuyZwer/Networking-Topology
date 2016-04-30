@@ -1,4 +1,6 @@
 # Networking-Topology
+I am working now on new project called " protocol of the week!", so you can use it to learn the materials in this lab:]
+
 Network topology LAB for practicing your knowledge with GNS3.
 This LAB will include the protocols and tecnologies as follow:	
 Layer 2 - STP, RSTP, PVST, ARP, CDP, L2TP, PPP, Trunk, MPLS		
