@@ -1,17 +1,36 @@
-Apr 26 10:49:40.683 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Apr 26 10:49:40.683 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53848.
-Apr 26 10:49:40.698 HYPERVISOR: exec_cmd: hypervisor version 
-Apr 26 10:49:40.698 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
-Apr 26 10:49:40.698 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
-Apr 26 10:49:40.699 HYPERVISOR: exec_cmd: ethsw create SW4 
-Apr 26 11:09:45.702 HYPERVISOR: exec_cmd: ethsw rename SW4 EC_BU_SW1 
-Apr 26 11:22:09.820 HYPERVISOR: exec_cmd: nio create_udp udp-634c5d11-fee1-4aff-b014-a054fd7a6af1 10034 127.0.0.1 10035 
-Apr 26 11:22:09.829 HYPERVISOR: exec_cmd: ethsw add_nio EC_BU_SW1 udp-634c5d11-fee1-4aff-b014-a054fd7a6af1 
-Apr 26 11:22:09.831 HYPERVISOR: exec_cmd: ethsw set_access_port EC_BU_SW1 udp-634c5d11-fee1-4aff-b014-a054fd7a6af1 1 
-Apr 26 11:22:33.590 HYPERVISOR: exec_cmd: nio create_udp udp-cd186b35-cfb7-4e98-a17f-86433dd0ba9e 10032 127.0.0.1 10033 
-Apr 26 11:22:33.598 HYPERVISOR: exec_cmd: ethsw add_nio EC_BU_SW1 udp-cd186b35-cfb7-4e98-a17f-86433dd0ba9e 
-Apr 26 11:22:33.615 HYPERVISOR: exec_cmd: ethsw set_access_port EC_BU_SW1 udp-cd186b35-cfb7-4e98-a17f-86433dd0ba9e 1 
-Apr 26 13:59:55.496 HYPERVISOR: exec_cmd: ethsw delete EC_BU_SW1 
-Apr 26 13:59:55.519 HYPERVISOR: exec_cmd: hypervisor stop 
-Apr 26 13:59:55.541 HYPERVISOR: Stopped.
-Apr 26 13:59:55.541 GENERAL: reset done.
+May 02 09:17:10.672 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 02 09:17:10.672 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44882.
+May 02 09:17:10.685 HYPERVISOR: exec_cmd: hypervisor version 
+May 02 09:17:10.686 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+May 02 09:17:10.686 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+May 02 09:17:10.686 HYPERVISOR: exec_cmd: vm create R2 8 c3600 
+May 02 09:17:10.686 VM: VM R2 created.
+May 02 09:17:10.687 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 2003 
+May 02 09:17:10.687 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+May 02 09:17:10.687 HYPERVISOR: exec_cmd: c3600 set_chassis R2 3660 
+May 02 09:17:10.688 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+May 02 09:17:10.688 HYPERVISOR: exec_cmd: vm set_ios R2 /home/guy/GNS3/images/IOS/c3660-ik9o3s-mz.124-13b.image 
+May 02 09:17:10.689 HYPERVISOR: exec_cmd: vm get_status R2 
+May 02 09:17:10.689 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60637a34 
+May 02 09:17:10.689 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 02 09:17:10.690 HYPERVISOR: exec_cmd: vm set_config R2 configs/i8_startup-config.cfg 
+May 02 09:18:15.721 HYPERVISOR: exec_cmd: vm rename R2 EC_BU_R1 
+May 02 09:18:41.862 HYPERVISOR: exec_cmd: nio create_udp udp-58747f99-49a6-4941-92fe-b120f6e26ad9 10007 127.0.0.1 10006 
+May 02 09:18:41.862 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R1 0 1 udp-58747f99-49a6-4941-92fe-b120f6e26ad9 
+May 02 09:18:41.863 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+May 02 09:18:44.555 HYPERVISOR: exec_cmd: nio create_udp udp-a5bb392c-15d5-4697-badd-3249d627de6d 10010 127.0.0.1 10011 
+May 02 09:18:44.559 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_BU_R1 0 0 udp-a5bb392c-15d5-4697-badd-3249d627de6d 
+May 02 09:18:44.559 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+May 02 09:19:06.787 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:19:15.429 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:19:16.796 HYPERVISOR: exec_cmd: vm set_ghost_status EC_BU_R1 2 
+May 02 09:19:16.797 HYPERVISOR: exec_cmd: vm set_ghost_file EC_BU_R1 c3660-ik9o3s-mz.124-13b.image-192.ghost 
+May 02 09:19:16.798 HYPERVISOR: exec_cmd: vm get_status EC_BU_R1 
+May 02 09:19:16.798 HYPERVISOR: exec_cmd: vm start EC_BU_R1 
+May 02 09:19:21.176 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:25:41.837 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:25:45.212 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:25:49.583 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:49:58.174 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:53:44.123 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 
+May 02 09:55:52.329 HYPERVISOR: exec_cmd: vm extract_config EC_BU_R1 

@@ -1,0 +1,77 @@
+Apr 26 19:28:39.060 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 19:28:39.060 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49481.
+Apr 26 19:28:39.074 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 19:28:39.074 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 19:28:39.074 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 19:28:39.074 HYPERVISOR: exec_cmd: vm create EC_CORE_SW1 6 c3600 
+Apr 26 19:28:39.074 VM: VM EC_CORE_SW1 created.
+Apr 26 19:28:39.075 HYPERVISOR: exec_cmd: vm set_con_tcp_port EC_CORE_SW1 2012 
+Apr 26 19:28:39.075 HYPERVISOR: exec_cmd: c3600 get_mac_addr EC_CORE_SW1 
+Apr 26 19:28:39.075 HYPERVISOR: exec_cmd: c3600 set_chassis EC_CORE_SW1 3660 
+Apr 26 19:28:39.076 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 26 19:28:39.077 HYPERVISOR: exec_cmd: vm set_idle_pc EC_CORE_SW1 0x60637a34 
+Apr 26 19:28:39.077 HYPERVISOR: exec_cmd: vm set_nvram EC_CORE_SW1 256 
+Apr 26 19:28:39.077 HYPERVISOR: exec_cmd: c3600 set_mac_addr EC_CORE_SW1 cc06.3a2b.0000 
+Apr 26 19:28:39.078 HYPERVISOR: exec_cmd: vm set_ios EC_CORE_SW1 /home/guy/GNS3/images/IOS/c3660-ik9o3s-mz.124-13b.image 
+Apr 26 19:28:39.078 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 26 19:28:39.079 HYPERVISOR: exec_cmd: vm slot_add_binding EC_CORE_SW1 1 0 NM-16ESW 
+Apr 26 19:28:39.079 HYPERVISOR: exec_cmd: vm set_ram EC_CORE_SW1 192 
+Apr 26 19:28:39.080 HYPERVISOR: exec_cmd: vm set_config EC_CORE_SW1 configs/i6_startup-config.cfg 
+Apr 26 19:28:40.404 HYPERVISOR: exec_cmd: nio create_udp udp-17899c70-6f2e-48f5-bfe7-30f37521f34b 10037 127.0.0.1 10036 
+Apr 26 19:28:40.405 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_CORE_SW1 1 14 udp-17899c70-6f2e-48f5-bfe7-30f37521f34b 
+Apr 26 19:28:40.405 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 26 19:28:40.428 HYPERVISOR: exec_cmd: nio create_udp udp-64572e95-a68b-480e-84f2-0778a9d03fa4 10038 127.0.0.1 10039 
+Apr 26 19:28:40.428 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_CORE_SW1 1 15 udp-64572e95-a68b-480e-84f2-0778a9d03fa4 
+Apr 26 19:28:40.429 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 26 19:28:46.522 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Apr 26 19:28:46.522 VM: VM Ghost created.
+Apr 26 19:28:46.523 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/guy/GNS3/images/IOS/c3660-ik9o3s-mz.124-13b.image 
+Apr 26 19:28:46.524 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 26 19:28:46.525 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3660-ik9o3s-mz.124-13b.image-192.ghost 
+Apr 26 19:28:46.525 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Apr 26 19:28:46.526 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 19:28:46.526 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 26 19:28:46.786 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 19:28:46.787 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 26 19:28:46.978 VM: VM Ghost shutdown.
+Apr 26 19:28:46.979 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 26 19:28:46.979 VM: VM Ghost destroyed.
+Apr 26 19:28:46.980 HYPERVISOR: exec_cmd: vm set_ghost_status EC_CORE_SW1 2 
+Apr 26 19:28:46.981 HYPERVISOR: exec_cmd: vm set_ghost_file EC_CORE_SW1 c3660-ik9o3s-mz.124-13b.image-192.ghost 
+Apr 26 19:28:46.982 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 26 19:28:46.982 HYPERVISOR: exec_cmd: vm start EC_CORE_SW1 
+Apr 27 06:41:35.868 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 06:41:45.845 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 27 06:41:45.852 HYPERVISOR: exec_cmd: vm stop EC_CORE_SW1 
+Apr 27 06:41:45.941 VM: VM EC_CORE_SW1 shutdown.
+Apr 27 06:41:45.945 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 06:41:58.781 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 27 06:41:58.791 HYPERVISOR: exec_cmd: vm start EC_CORE_SW1 
+Apr 27 07:18:20.418 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 07:30:04.900 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 07:43:16.118 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 09:00:09.261 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 09:29:02.392 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 09:54:45.849 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 10:02:51.539 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 15:21:42.084 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:39:56.502 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:46:08.417 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:46:25.009 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:46:53.642 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 27 16:46:53.647 HYPERVISOR: exec_cmd: vm stop EC_CORE_SW1 
+Apr 27 16:46:53.796 VM: VM EC_CORE_SW1 shutdown.
+Apr 27 16:46:53.807 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:46:57.495 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 27 16:46:57.533 HYPERVISOR: exec_cmd: vm start EC_CORE_SW1 
+Apr 27 16:47:01.509 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 27 16:47:01.512 HYPERVISOR: exec_cmd: vm stop EC_CORE_SW1 
+Apr 27 16:47:01.686 VM: VM EC_CORE_SW1 shutdown.
+Apr 27 16:47:01.688 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:47:06.762 HYPERVISOR: exec_cmd: vm get_status EC_CORE_SW1 
+Apr 27 16:47:06.766 HYPERVISOR: exec_cmd: vm extract_config EC_CORE_SW1 
+Apr 27 16:47:06.772 HYPERVISOR: exec_cmd: vm delete EC_CORE_SW1 
+Apr 27 16:47:06.772 VM: VM EC_CORE_SW1 destroyed.
+Apr 27 16:47:06.778 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 27 16:47:07.177 HYPERVISOR: Stopped.
+Apr 27 16:47:07.178 GENERAL: reset done.

@@ -1,30 +1,46 @@
-Apr 26 10:43:17.112 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
-Apr 26 10:43:17.112 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32949.
-Apr 26 10:43:17.129 HYPERVISOR: exec_cmd: hypervisor version 
-Apr 26 10:43:17.129 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
-Apr 26 10:43:17.129 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
-Apr 26 10:43:17.130 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
-Apr 26 10:43:17.130 VM: VM R5 created.
-Apr 26 10:43:17.131 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2005 
-Apr 26 10:43:17.131 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
-Apr 26 10:43:17.132 HYPERVISOR: exec_cmd: vm get_status R5 
-Apr 26 10:43:17.132 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
-Apr 26 10:43:17.133 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
-Apr 26 10:43:17.134 HYPERVISOR: exec_cmd: vm set_ios R5 /home/guy/GNS3/images/IOS/c7200p-adventerprisek9-mz.124-11.T2.image 
-Apr 26 10:43:17.135 HYPERVISOR: exec_cmd: vm get_status R5 
-Apr 26 10:43:17.135 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x2d993a8 
-Apr 26 10:43:17.136 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
-Apr 26 10:43:17.137 HYPERVISOR: exec_cmd: vm set_ram R5 512 
-Apr 26 10:43:17.137 HYPERVISOR: exec_cmd: vm get_status R5 
-Apr 26 10:43:17.138 HYPERVISOR: exec_cmd: c7200 set_npe R5 npe-g2 
-Apr 26 10:43:17.139 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
-Apr 26 10:45:27.919 HYPERVISOR: exec_cmd: vm get_status R5 
-Apr 26 10:45:27.919 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x0 
-Apr 26 10:45:27.920 HYPERVISOR: exec_cmd: vm get_status R5 
-Apr 26 10:45:48.556 HYPERVISOR: exec_cmd: vm get_status R5 
-Apr 26 10:45:48.560 HYPERVISOR: exec_cmd: vm extract_config R5 
-Apr 26 10:45:48.564 HYPERVISOR: exec_cmd: vm delete R5 
-Apr 26 10:45:48.564 VM: VM R5 destroyed.
-Apr 26 10:45:48.566 HYPERVISOR: exec_cmd: hypervisor stop 
-Apr 26 10:45:48.768 HYPERVISOR: Stopped.
-Apr 26 10:45:48.769 GENERAL: reset done.
+May 02 08:34:23.483 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+May 02 08:34:23.483 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41697.
+May 02 08:34:23.488 HYPERVISOR: exec_cmd: hypervisor version 
+May 02 08:34:23.488 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+May 02 08:34:23.488 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+May 02 08:34:23.489 HYPERVISOR: exec_cmd: vm create EC_LD_R1 11 c3725 
+May 02 08:34:23.489 VM: VM EC_LD_R1 created.
+May 02 08:34:23.489 HYPERVISOR: exec_cmd: vm set_con_tcp_port EC_LD_R1 2006 
+May 02 08:34:23.490 HYPERVISOR: exec_cmd: c3725 get_mac_addr EC_LD_R1 
+May 02 08:34:23.491 HYPERVISOR: exec_cmd: c3725 set_mac_addr EC_LD_R1 c20b.293f.0000 
+May 02 08:34:23.491 HYPERVISOR: exec_cmd: vm set_disk0 EC_LD_R1 0 
+May 02 08:34:23.492 HYPERVISOR: exec_cmd: vm set_nvram EC_LD_R1 256 
+May 02 08:34:23.493 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 08:34:23.493 HYPERVISOR: exec_cmd: vm slot_add_binding EC_LD_R1 1 0 NM-1FE-TX 
+May 02 08:34:23.494 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 08:34:23.494 HYPERVISOR: exec_cmd: vm set_idle_pc EC_LD_R1 0x60264f28 
+May 02 08:34:23.495 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 08:34:23.496 HYPERVISOR: exec_cmd: vm slot_add_binding EC_LD_R1 2 0 NM-1FE-TX 
+May 02 08:34:23.519 HYPERVISOR: exec_cmd: vm set_ios EC_LD_R1 /home/guy/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T7.image 
+May 02 08:34:23.531 HYPERVISOR: exec_cmd: vm set_config EC_LD_R1 configs/i11_startup-config.cfg 
+May 02 08:34:24.689 HYPERVISOR: exec_cmd: nio create_udp udp-45355436-2367-4537-bb7e-9838b9d24cda 10012 127.0.0.1 10013 
+May 02 08:34:24.697 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_LD_R1 0 0 udp-45355436-2367-4537-bb7e-9838b9d24cda 
+May 02 08:34:24.698 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 08:34:24.832 HYPERVISOR: exec_cmd: nio create_udp udp-9d5bff5b-b924-47b4-9235-eb622257f115 10020 127.0.0.1 10021 
+May 02 08:34:24.832 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_LD_R1 0 1 udp-9d5bff5b-b924-47b4-9235-eb622257f115 
+May 02 08:34:24.833 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 08:35:47.520 HYPERVISOR: exec_cmd: vm set_ghost_status EC_LD_R1 2 
+May 02 08:35:47.521 HYPERVISOR: exec_cmd: vm set_ghost_file EC_LD_R1 c3725-adventerprisek9-mz.124-15.T7.image-128.ghost 
+May 02 08:35:47.521 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 08:35:47.521 HYPERVISOR: exec_cmd: vm start EC_LD_R1 
+May 02 09:14:10.031 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:16:53.192 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 09:16:53.192 HYPERVISOR: exec_cmd: vm stop EC_LD_R1 
+May 02 09:16:53.285 VM: VM EC_LD_R1 shutdown.
+May 02 09:16:53.286 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:19:06.786 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:19:15.429 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:19:17.005 HYPERVISOR: exec_cmd: vm get_status EC_LD_R1 
+May 02 09:19:17.005 HYPERVISOR: exec_cmd: vm start EC_LD_R1 
+May 02 09:19:21.155 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:25:41.825 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:25:45.192 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:25:49.563 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:49:58.161 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:53:44.101 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 
+May 02 09:55:52.316 HYPERVISOR: exec_cmd: vm extract_config EC_LD_R1 

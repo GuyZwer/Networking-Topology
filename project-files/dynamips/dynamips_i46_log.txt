@@ -1,0 +1,84 @@
+Apr 26 19:28:38.812 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 19:28:38.812 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58921.
+Apr 26 19:28:38.830 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 19:28:38.831 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 19:28:38.831 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 19:28:38.832 HYPERVISOR: exec_cmd: vm create EC_SD_R1 10 c3725 
+Apr 26 19:28:38.832 VM: VM EC_SD_R1 created.
+Apr 26 19:28:38.832 HYPERVISOR: exec_cmd: vm set_con_tcp_port EC_SD_R1 2005 
+Apr 26 19:28:38.833 HYPERVISOR: exec_cmd: c3725 get_mac_addr EC_SD_R1 
+Apr 26 19:28:38.834 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:38.835 HYPERVISOR: exec_cmd: vm set_idle_pc EC_SD_R1 0x60264f28 
+Apr 26 19:28:38.836 HYPERVISOR: exec_cmd: vm set_nvram EC_SD_R1 256 
+Apr 26 19:28:38.837 HYPERVISOR: exec_cmd: c3725 set_mac_addr EC_SD_R1 c20a.2928.0000 
+Apr 26 19:28:38.837 HYPERVISOR: exec_cmd: vm set_ios EC_SD_R1 /home/guy/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T7.image 
+Apr 26 19:28:38.838 HYPERVISOR: exec_cmd: vm set_disk0 EC_SD_R1 0 
+Apr 26 19:28:38.840 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:38.842 HYPERVISOR: exec_cmd: vm slot_add_binding EC_SD_R1 2 0 NM-16ESW 
+Apr 26 19:28:38.843 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:38.844 HYPERVISOR: exec_cmd: vm slot_add_binding EC_SD_R1 1 0 NM-1FE-TX 
+Apr 26 19:28:38.845 HYPERVISOR: exec_cmd: vm set_config EC_SD_R1 configs/i10_startup-config.cfg 
+Apr 26 19:28:39.753 HYPERVISOR: exec_cmd: nio create_udp udp-60cd2292-3071-4e35-a6d5-155ef5960f3a 10003 127.0.0.1 10002 
+Apr 26 19:28:39.754 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_SD_R1 2 14 udp-60cd2292-3071-4e35-a6d5-155ef5960f3a 
+Apr 26 19:28:39.754 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:39.801 HYPERVISOR: exec_cmd: nio create_udp udp-6b65fb8d-3821-466d-93d2-cee579310cfc 10004 127.0.0.1 10007 
+Apr 26 19:28:39.803 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_SD_R1 2 15 udp-6b65fb8d-3821-466d-93d2-cee579310cfc 
+Apr 26 19:28:39.804 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:40.156 HYPERVISOR: exec_cmd: nio create_udp udp-04d5e701-6eaa-406e-9afd-f62a7571db2b 10024 127.0.0.1 10025 
+Apr 26 19:28:40.157 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_SD_R1 0 1 udp-04d5e701-6eaa-406e-9afd-f62a7571db2b 
+Apr 26 19:28:40.158 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:47.410 HYPERVISOR: exec_cmd: vm set_ghost_status EC_SD_R1 2 
+Apr 26 19:28:47.411 HYPERVISOR: exec_cmd: vm set_ghost_file EC_SD_R1 c3725-adventerprisek9-mz.124-15.T7.image-128.ghost 
+Apr 26 19:28:47.411 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 26 19:28:47.412 HYPERVISOR: exec_cmd: vm start EC_SD_R1 
+Apr 27 06:41:35.827 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 06:41:45.957 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 06:41:45.960 HYPERVISOR: exec_cmd: vm stop EC_SD_R1 
+Apr 27 06:41:46.069 VM: VM EC_SD_R1 shutdown.
+Apr 27 06:41:46.070 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 06:41:59.027 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 06:41:59.028 HYPERVISOR: exec_cmd: vm start EC_SD_R1 
+Apr 27 07:18:20.375 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 07:30:04.859 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 07:43:16.077 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 09:00:09.219 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 09:24:36.176 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 09:24:36.180 HYPERVISOR: exec_cmd: vm slot_disable_nio EC_SD_R1 2 14 
+Apr 27 09:24:36.200 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding EC_SD_R1 2 14 
+Apr 27 09:24:36.201 HYPERVISOR: exec_cmd: nio delete udp-60cd2292-3071-4e35-a6d5-155ef5960f3a 
+Apr 27 09:26:08.668 HYPERVISOR: exec_cmd: nio create_udp udp-a04c9cc8-678b-4524-bfb1-9a524cbd04f2 10006 127.0.0.1 10005 
+Apr 27 09:26:08.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EC_SD_R1 2 14 udp-a04c9cc8-678b-4524-bfb1-9a524cbd04f2 
+Apr 27 09:26:08.671 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 09:26:08.679 HYPERVISOR: exec_cmd: vm slot_enable_nio EC_SD_R1 2 14 
+Apr 27 09:29:02.313 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 09:54:17.516 HYPERVISOR: exec_cmd: vm set_disk0 EC_SD_R1 256 
+Apr 27 09:54:17.517 HYPERVISOR: exec_cmd: vm set_disk1 EC_SD_R1 256 
+Apr 27 09:54:45.808 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 09:54:50.751 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 09:54:50.752 HYPERVISOR: exec_cmd: vm stop EC_SD_R1 
+Apr 27 09:54:50.869 VM: VM EC_SD_R1 shutdown.
+Apr 27 09:54:50.872 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 09:54:55.983 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 09:54:55.985 HYPERVISOR: exec_cmd: vm start EC_SD_R1 
+Apr 27 10:02:51.497 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 15:21:24.384 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:39:56.481 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:46:08.397 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:46:24.988 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:46:53.805 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 16:46:53.809 HYPERVISOR: exec_cmd: vm stop EC_SD_R1 
+Apr 27 16:46:53.930 VM: VM EC_SD_R1 shutdown.
+Apr 27 16:46:53.931 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:46:57.765 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 16:46:57.766 HYPERVISOR: exec_cmd: vm start EC_SD_R1 
+Apr 27 16:47:01.619 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 16:47:01.620 HYPERVISOR: exec_cmd: vm stop EC_SD_R1 
+Apr 27 16:47:01.732 VM: VM EC_SD_R1 shutdown.
+Apr 27 16:47:01.733 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:47:06.759 HYPERVISOR: exec_cmd: vm get_status EC_SD_R1 
+Apr 27 16:47:06.765 HYPERVISOR: exec_cmd: vm extract_config EC_SD_R1 
+Apr 27 16:47:06.771 HYPERVISOR: exec_cmd: vm delete EC_SD_R1 
+Apr 27 16:47:06.771 VM: VM EC_SD_R1 destroyed.
+Apr 27 16:47:06.777 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 27 16:47:06.885 HYPERVISOR: Stopped.
+Apr 27 16:47:06.885 GENERAL: reset done.

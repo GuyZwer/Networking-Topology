@@ -1,0 +1,21 @@
+Apr 26 19:28:38.883 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Apr 26 19:28:38.883 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50336.
+Apr 26 19:28:38.910 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 19:28:38.912 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guy/GNS3/projects/Networking Topology/project-files/dynamips 
+Apr 26 19:28:38.912 GENERAL: working_dir=/home/guy/GNS3/projects/Networking Topology/project-files/dynamips
+Apr 26 19:28:38.913 HYPERVISOR: exec_cmd: ethsw create EC_SD_SW1 
+Apr 26 19:28:39.828 HYPERVISOR: exec_cmd: nio create_udp udp-9f6945f7-bb08-417a-a65a-05f56571ac0f 10007 127.0.0.1 10004 
+Apr 26 19:28:39.829 HYPERVISOR: exec_cmd: ethsw add_nio EC_SD_SW1 udp-9f6945f7-bb08-417a-a65a-05f56571ac0f 
+Apr 26 19:28:39.846 HYPERVISOR: exec_cmd: ethsw set_access_port EC_SD_SW1 udp-9f6945f7-bb08-417a-a65a-05f56571ac0f 1 
+Apr 26 19:28:39.856 HYPERVISOR: exec_cmd: nio create_udp udp-45b6a038-3f09-4864-88aa-49274015e3ec 10008 127.0.0.1 10009 
+Apr 26 19:28:39.863 HYPERVISOR: exec_cmd: ethsw add_nio EC_SD_SW1 udp-45b6a038-3f09-4864-88aa-49274015e3ec 
+Apr 26 19:28:39.866 HYPERVISOR: exec_cmd: ethsw set_access_port EC_SD_SW1 udp-45b6a038-3f09-4864-88aa-49274015e3ec 1 
+Apr 26 19:28:40.335 HYPERVISOR: exec_cmd: nio create_udp udp-1ff4cf8c-215d-4300-a4b2-dde8635d1719 10033 127.0.0.1 10032 
+Apr 26 19:28:40.339 HYPERVISOR: exec_cmd: ethsw add_nio EC_SD_SW1 udp-1ff4cf8c-215d-4300-a4b2-dde8635d1719 
+Apr 26 19:28:40.347 HYPERVISOR: exec_cmd: ethsw set_access_port EC_SD_SW1 udp-1ff4cf8c-215d-4300-a4b2-dde8635d1719 1 
+Apr 27 09:59:54.548 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EC_SD_SW1 udp-9f6945f7-bb08-417a-a65a-05f56571ac0f 1 
+Apr 27 09:59:54.549 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EC_SD_SW1 udp-45b6a038-3f09-4864-88aa-49274015e3ec 1 
+Apr 27 16:47:06.221 HYPERVISOR: exec_cmd: ethsw delete EC_SD_SW1 
+Apr 27 16:47:06.277 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 27 16:47:06.463 HYPERVISOR: Stopped.
+Apr 27 16:47:06.463 GENERAL: reset done.
